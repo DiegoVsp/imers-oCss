@@ -74,7 +74,7 @@ a:hover {
 
 .menu a {
   display: block;
-  padding: 3vh 20px;
+  padding: 1vh 20px;
   transition: background-color 1s, color 1s;
 }
 
@@ -138,18 +138,24 @@ a:hover {
 
 .sobre a {
   color: black;
+
 }
 
-/* .sobre a:hover {
+.sobre a:hover {
+  color: white;
+  transition: 1000ms;
+  text-shadow: 0 0 20px whitesmoke;
+}
 
-} */
 .sobre .avatar {
   float: right;
   margin-left: 2em;
 }
 
 .sobre .avatar img {
-  border-radius: 50%;
+  width: 20em;
+  /* border-radius: 50%; */
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   box-shadow: 0px 0px 20px white;
 }
 
@@ -177,11 +183,12 @@ a:hover {
 
 .portfolio figure {
   text-align: center;
+  color: whitesmoke;
 }
 
 .img-portfolio {
   height: 180px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
   /* object-position: left-bottom; */
   border-radius: 5px;
@@ -189,8 +196,40 @@ a:hover {
 
 }
 
-.img-portfolio:hover {
+/* .img-portfolio:hover {
   transform: scale(1.2);
+} */
+.flip-card {
+  perspective: 1000px;
+  /*  colocar a mesma altura e largura que colocou na card-back para que as imagens não fiquem sobrepostas*/
+  height: 180px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-back {
+  background-color: white;
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
 }
 
 @media (min-width: 300px) {
