@@ -6,20 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diego Vespa</title>
   <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://kit.fontawesome.com/79738d490a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <nav class="menu">
-      <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">Contato</a></li>
+      <div class="hamburguer">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+      </div>
+      <ul class="links-menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <h1 class="site-title">Diego Vespa</h1>
-    <h2 class="site-subtitle">jr. web developer</h2>
+    <div class="titulo">
+      <h1 class="site-title">Diego Vespa</h1>
+      <h2 class="site-subtitle">Estudante em Análise e Desenvolvimento de Sistemas</h2>
+    </div>
   </header>
+
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+
+    <figure class="avatar">
+      <img src="https://avatars0.githubusercontent.com/u/42758900?s=460&u=552cfbe3cfb27ae826e8121e193e694e1700cf49&v=4" alt="Diego Vespa">
+    </figure>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae dolorum sit corporis facilis et tenetur
+      accusamus minus quia? Asperiores laborum sequi consequatur numquam laudantium inventore porro? Modi, consequatur
+      sequi?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis architecto necessitatibus quos, repellat
+      tempora provident eaque ab omnis minima beatae neque, consectetur alias exercitationem soluta. Ab inventore odit
+      ad porro!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolor voluptatem consectetur suscipit enim
+      omnis. Natus sint harum laboriosam error impedit earum voluptas commodi! Sit sint perferendis amet est magnam.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, in? Quod maxime quibusdam quas illo, quaerat dolor distinctio est cumque possimus doloribus error! Debitis, officia dolor! Voluptates velit cum ipsum?</p>
+    <p>Esse site foi desenvolvido durante a <a href="#">Imersão CSS da Alura</a></p>
+  </section>
+
+  <section class="portfolio container" id="portfolio">
+    <h2>Projetos</h2>
+
+    <div class="grid">
+      <figure>
+        <img class="img-portfolio" src="https://www.erpflex.com.br/blog/wp-content/uploads/e-commerce-6-2000x1200.jpg"
+          alt="eCommerce">
+        <figcaption>eCommerce</figcaption>
+      </figure>
+      <figure>
+        <img class="img-portfolio" src="https://www.site.com.br/wp-content/uploads/mobile-commerce.jpg" alt=">Mobile">
+        <figcaption>Mobile</figcaption>
+      </figure>
+      <figure>
+        <img class="img-portfolio" src="https://www.xpecialdesign.com.br/wp-content/uploads/2019/05/Web-Designer-2.jpg"
+          alt="Web design">
+        <figcaption>Web design</figcaption>
+      </figure>
+      <figure>
+        <img class="img-portfolio"
+          src="https://www.layerlemonade.com/wp-content/uploads/2016/07/people-woman-coffee-meeting-759x500.jpg"
+          alt="Projetos pessoais">
+        <figcaption>Projetos pessoais</figcaption>
+      </figure>
+      <figure>
+        <img class="img-portfolio"
+          src="https://www.layerlemonade.com/wp-content/uploads/2016/07/people-woman-coffee-meeting-759x500.jpg"
+          alt="Projetos pessoais">
+        <figcaption>Projetos pessoais</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="contato container" id="contato">
+    <h2>Contato</h2>
+    <div class="grid icons">
+      <a href="https://github.com/DiegoVsp" target="_blank"><i class="fab fa-github-square"></i></a>
+      <a href="https://www.instagram.com/diego__vespa/?hl=pt-br" target="_blank"><i
+          class="fab fa-instagram-square"></i></a>
+      <a href="https://www.linkedin.com/in/diego-vespa" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://" target="_blank"><i class="fas fa-envelope-square"></i></a>
+    </div>
+  </section>
+  <script src="menu.js"></script>
 </body>
 
 </html>
